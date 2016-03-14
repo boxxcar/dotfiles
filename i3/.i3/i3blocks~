@@ -1,0 +1,59 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+command=~/.i3/blocks/$BLOCK_NAME
+separator_block_width=20
+markup=none
+
+[weather]
+# York
+instance=4562407
+# Silver Spring
+#instance=4369596
+interval=60
+
+[volume]
+label=
+instance=Master
+interval=once
+signal=1
+
+[brightness]
+label=
+interval=5
+
+[battery]
+label=
+instance=0
+interval=5
+
+[time]
+command=date '+ %I:%M:%S'
+interval=5
+
+[date]
+command=date '+ %D'
+interval=5
