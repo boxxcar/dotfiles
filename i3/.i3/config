@@ -49,7 +49,7 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -hide-scrollbar -dmenu -p "run:"'
 
 # start rofi window switcher
 bindsym $mod+w exec rofi -show window
@@ -150,7 +150,7 @@ bindsym $mod+Shift+x exec --no-startup-id xrdb ~/.Xresources
 bindsym $mod+Shift+e mode "$exit"
 set $exit (l)ock, (e)xit, (s)hutdown, (r)eboot
 mode "$exit" {
-	bindsym l exec --no-startup-id i3lock -i ~/.i3/Lock.jpg; mode default
+	bindsym l exec --no-startup-id i3lock -i ~/.i3/Lock.jpg, mode "default"
 	bindsym e exec --no-startup-id i3-msg exit, mode "default"
 	bindsym s exec systemctl poweroff
 	bindsym r exec systemctl reboot
