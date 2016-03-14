@@ -25,7 +25,11 @@
 # The top properties below are applied to every block, but can be overridden.
 # Each block command defaults to the script name to avoid boilerplate.
 command=~/.i3/blocks/$BLOCK_NAME
+<<<<<<< HEAD
 separator_block_width=25
+=======
+separator_block_width=15
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 markup=none
 
 [weather]

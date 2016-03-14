@@ -3,24 +3,38 @@
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
+<<<<<<< HEAD
 font pango:Droid Serif 12
+=======
+font pango:DejuVu Serif Book 12
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # Mod Set:
 set $mod Mod4
 
 # WS Set:
+<<<<<<< HEAD
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
+=======
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
 # Assign Windows:
+<<<<<<< HEAD
 assign [class="Xfce4-terminal"] $ws1
 assign [class="Thunar"] $ws2
 assign [class="Firefox"] $ws3
@@ -35,6 +49,21 @@ set $white		#F5F5F6
 set $lightpurple	#D94893
 set $purple		#A13A82
 set $lightred		#F6A09F
+=======
+assign [class="URxvt"] $ws1
+assign [class="Thunar"] $ws2
+assign [class="google-chrome"] $ws3
+#assign [class="Spotify"] $ws4
+for_window [class="Spotify"] move to workspace $ws4
+assign [class="Steam"] $ws5
+
+# Set Colors:
+set $darkblue	#1E242D
+set $darkpurple	#BDBDD2
+set $white	#F5F5F6
+set $purple	#63637E
+set $red	#F79295
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -43,13 +72,24 @@ floating_modifier $mod
 set $update && pkill -RTMIN+1 i3blocks
 
 # start a terminal
+<<<<<<< HEAD
 bindsym $mod+Return exec xfce4-terminal
+=======
+bindsym $mod+Return exec urxvt
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # kill focused window
 bindsym $mod+q kill
 
 # start rofi (a program launcher)
+<<<<<<< HEAD
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+=======
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -hide-scrollbar -dmenu -p "run:"'
+
+# start rofi window switcher
+bindsym $mod+w exec rofi -show window
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # Window Focus
 bindsym $mod+Left focus left
@@ -90,11 +130,19 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # move the currently focused window to the scratchpad
+<<<<<<< HEAD
 #bindsym $mod+Shift+minus move scratchpad
 
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
 #bindsym $mod+minus scratchpad show
+=======
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -143,10 +191,17 @@ bindsym $mod+Shift+x exec --no-startup-id xrdb ~/.Xresources
 bindsym $mod+Shift+e mode "$exit"
 set $exit (l)ock, (e)xit, (s)hutdown, (r)eboot
 mode "$exit" {
+<<<<<<< HEAD
 	bindsym l exec --no-startup-id i3lock -i ~/.i3/Lock.jpg; mode default
 	bindsym e exec --no-startup-id i3-msg exit, mode "default"
 	bindsym s exec systemctl poweroff
 	bindsym r exec systemctl reboot
+=======
+	bindsym l exec --no-startup-id i3lock -i ~/.i3/'Minimal Rey.png'; mode default
+	bindsym e exec --no-startup-id i3-msg exit, mode "default"
+	bindsym s exec urxvt -e shutdown -h now
+	bindsym r exec urxvt -e reboot
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 	bindsym Escape mode "default"
 }
 
@@ -155,10 +210,17 @@ new_window pixel 1
 #for_window [class="^.*"] border pixel 0
 
 # Gaps:
+<<<<<<< HEAD
 #smart_gaps on
 #smart_borders no_gaps
 #bindsym $mod+Shift+Home gaps inner all set 10
 #bindsym $mod+Shift+End gaps inner all set 0
+=======
+smart_gaps on
+smart_borders no_gaps
+bindsym $mod+Shift+Home gaps inner all set 10
+bindsym $mod+Shift+End gaps inner all set 0
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -179,6 +241,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3blocks -c ~/.i3/i3blocks	
+<<<<<<< HEAD
 	font pango:Droid Serif 10
 	position top
 	workspace_buttons yes
@@ -194,38 +257,86 @@ bar {
 		statusline		$white
 		background		$darkpurple
 		separator		$darkblue
+=======
+	font pango:Serif 10
+	position top
+	height 25
+	tray_padding 5
+	workspace_buttons yes
+	strip_workspace_numbers yes
+	separator_symbol ""
+	colors {
+		# Class			Border		Background	Text
+		focused_workspace	$white		$darkblue	$purple
+		active_workspace	$red		$darkblue	$purple
+		inactive_workspace	$darkblue	$darkblue	$purple
+		urgent_workspace	$red		$darkblue	$red
+		
+		statusline		$purple
+		background		$darkblue
+		separator		$red
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 	}
 }
 
 # Colors:
 # Class			Border		Background	Text		Indicator
+<<<<<<< HEAD
 client.focused		$white		$darkpurple	$white		$darkpurple
 client.unfocused	$darkpurple	$darkpurple	$white		$white
 client.focused_inactive $darkblue	$purple		$white		$darkblue
 client.urgent		$red		$lightred	$red		$red
+=======
+client.focused		$white		$white		$purple		$white
+client.unfocused	$darkblue	$darkblue	$purple		$red
+client.focused_inactive $darkblue	$darkblue	$purple		$darkblue
+client.urgent		$red		$white		$red		$red
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # Screenshot
 bindsym $mod+Print exec --no-startup-id scrot
 
 # Programs:
+<<<<<<< HEAD
 bindsym $mod+Shift+f exec --no-startup-id firefox
 bindsym $mod+Shift+t exec --no-startup-id thunar
 bindsym $mod+Shift+v exec --no-startup-id virt-manager
 bindsym $mod+Shift+l exec --no-startup-id libreoffice
 bindsym $mod+Shift+m exec --no-startup-id remmina
+=======
+bindsym $mod+Shift+g exec --no-startup-id google-chrome-stable
+bindsym $mod+Shift+t exec --no-startup-id thunar
+bindsym $mod+Shift+s exec --no-startup-id steam
+bindsym $mod+Shift+p exec --no-startup-id spotify
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # Audio Controls:
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% $update
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% $update
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-volume 0 toggle $update
 
+<<<<<<< HEAD
 # Wallpaper
 exec --no-startup-id feh --bg-scale ~/.i3/Wallpaper.jpg
+=======
+# Bightness Controls:
+bindsym $mod+End exec xbacklight -inc 5 $update
+bindsym $mod+Home exec xbacklight -dec 5 $update
+
+# Wallpaper
+exec --no-startup-id feh --bg-scale ~/.i3/Wallpaper.png
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # Startups:
 exec thunar --daemon
 exec --no-startup-id pulseaudio -D
+<<<<<<< HEAD
 #exec compton -CGb
 exec xautolock -time 10 -locker i3lock -i ~/.i3/Lock.jpg
 exec --no-startup-id caffeine-indicator
+=======
+exec compton -CGb
+exec xautolock -time 10 -locker i3lock -i ~/.i3/Lock.png
+exec --no-startup-id caffeine
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 exec --no-startup-id nm-applet

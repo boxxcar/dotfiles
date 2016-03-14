@@ -8,7 +8,11 @@ ZSH=~/.oh-my-zsh/
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+<<<<<<< HEAD
 ZSH_THEME="bira"
+=======
+ZSH_THEME="bureau"
+>>>>>>> 2925057b414c6c2ad4563bcb8e7606008b38c217
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
