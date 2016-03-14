@@ -1,0 +1,24 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #1e242d, #f5f5f6, #bdbdd2
+rofi.color-normal: #1e242d, #63637e, #1e242d, #f5f5f6, #63637e
+rofi.color-active: #1e252d, #63637e, #1e242d, #f5f5f6, #63637e
+rofi.color-urgent: #f5f5f6, #f79295, #63637e, #f5f5f6, #f79295
+rofi.opacity: 80
+! Launcher
+rofi.width: 500
+rofi.padding: 25
+rofi.eh: 1
+rofi.lines: 5
+rofi.location: 0
+
+! URxvt Config
+URxvt*.depth: 32
+URxvt*.scrollBar: false
+URxvt*.font: xft:Hack:size=12
+
+! Colors
+URxvt*background: [80]#000000
+URxvt*foreground: #FFFFFF
