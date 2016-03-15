@@ -236,3 +236,4 @@ exec compton -CGb
 exec xautolock -time 10 -locker i3lock -i ~/.i3/Lock.png
 exec --no-startup-id caffeine
 exec --no-startup-id nm-applet
+exec_always ~/displays.sh
