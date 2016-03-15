@@ -145,7 +145,7 @@ bindsym $mod+Shift+x exec --no-startup-id xrdb ~/.Xresources
 bindsym $mod+Shift+e mode "$exit"
 set $exit (l)ock, (e)xit, (s)hutdown, (r)eboot
 mode "$exit" {
-	bindsym l exec ~/.i3/lock.sh ~/Pictures/Icons/Lock.png
+	bindsym l exec ~/lock.sh ~/Pictures/Icons/Lock.png
 	bindsym e exec --no-startup-id i3-msg exit, mode "default"
 	bindsym s exec urxvt -e shutdown -h now
 	bindsym r exec urxvt -e reboot
