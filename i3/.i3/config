@@ -48,7 +48,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -i -hide-scrollbar -dmenu -p "run:"'
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -hide-scrollbar -dmenu -p "run:"'
 
 # start rofi window switcher
 bindsym $mod+w exec rofi -show window
@@ -227,12 +227,13 @@ bindsym $mod+End exec xbacklight -inc 5 $update
 bindsym $mod+Home exec xbacklight -dec 5 $update
 
 # Wallpaper
-exec --no-startup-id feh --bg-scale ~/.i3/Wallpaper.png
+exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/Ren.png
 
 # Startups:
 exec thunar --daemon
 exec --no-startup-id pulseaudio -D
 exec compton -CGb
-exec xautolock -time 10 -locker i3lock -i ~/.i3/Lock.png
+exec xautolock -time 10 -locker i3lock -i ~/Pictures/Wallpapers/Rey.png
 exec --no-startup-id caffeine
 exec --no-startup-id nm-applet
+exec_always ~/displays.sh
