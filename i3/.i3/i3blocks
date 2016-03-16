@@ -28,13 +28,6 @@ command=~/.i3/blocks/$BLOCK_NAME
 separator_block_width=25
 markup=none
 
-[mediaplayer]
-command=$SCRIPT_DIR/mediaplayer
-label=
-instance=spotify
-interval=5
-signal=10
-
 [weather]
 # York
 instance=4562407
