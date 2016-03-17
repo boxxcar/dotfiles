@@ -28,6 +28,11 @@ command=~/.i3/blocks/$BLOCK_NAME
 separator_block_width=25
 markup=none
 
+[music]
+label=
+command=ncmpcpp --current-song
+interval=5
+
 [weather]
 # York
 instance=4562407
