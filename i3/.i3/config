@@ -27,7 +27,6 @@ assign [class="google-chrome"] $ws3
 for_window [class="Spotify"] move to workspace $ws4
 assign [class="Gedit"] $ws5
 assign [class="Steam"] $ws6
-for_window [title="mopidy"] move to workspace $ws7
 
 # Set Colors:
 set $darkblue	#1E242D
@@ -220,7 +219,7 @@ bindsym $mod+Shift+g exec --no-startup-id google-chrome-stable
 bindsym $mod+Shift+t exec --no-startup-id thunar
 bindsym $mod+Shift+s exec --no-startup-id steam
 bindsym $mod+Shift+p exec --no-startup-id spotify
-bindsym $mod+Shift+m exec --no-startup-id urxvt -e mopidy, move window to workspace $ws7
+bindsym $mod+Shift+m exec --no-startup-id urxvt -e mopidy
 bindsym $mod+Shift+n exec --no-startup-id urxvt -e ncmpcpp
 
 # Audio Controls:
@@ -236,9 +235,10 @@ bindsym $mod+Home exec xbacklight -dec 5 $update
 exec --no-startup-id ~/.fehbg
 
 # Startups:
-exec thunar --daemon
-exec --no-startup-id pulseaudio -D
-exec compton -CGb
-exec --no-startup-id caffeine
-exec --no-startup-id nm-applet
-exec_always ~/displays.sh
+exec thunar --daemon # Thunar for disk mounting
+exec --no-startup-id pulseaudio -D # Pulseaudio daemon
+exec compton -CGb # Compton with shadows disabled
+exec --no-startup-id caffeine # No screen saver
+exec --no-startup-id nm-applet # Network Manager applet
+exec_always ~/displays.sh # Custom display config script
+exec --no-startupid blueman-manager # Bluetooth manager for speaker
