@@ -3,11 +3,11 @@
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #1e242d, #f5f5f6, #bdbdd2
-rofi.color-normal: #1e242d, #63637e, #1e242d, #f5f5f6, #63637e
-rofi.color-active: #1e252d, #63637e, #1e242d, #f5f5f6, #63637e
-rofi.color-urgent: #f5f5f6, #f79295, #63637e, #f5f5f6, #f79295
-rofi.opacity: 80
+rofi.color-window: #1d232c, #f4f4f5, #bcbcd1
+rofi.color-normal: #1d232c, #62627c, #1d232c, #f4f4f5, #62627c
+rofi.color-active: #1d252c, #62627c, #1d232c, #f4f4f5, #62627c
+rofi.color-urgent: #f4f4f5, #f79295, #62627c, #f4f4f5, #f79295
+!rofi.opacity: 80
 ! Launcher
 rofi.width: 500
 rofi.padding: 25
@@ -21,5 +21,5 @@ URxvt*.scrollBar: false
 URxvt*.font: xft:Hack:size=12
 
 ! Colors
-URxvt*background: [80]#000000
-URxvt*foreground: #FFFFFF
+URxvt*background: [80]#1D232C
+URxvt*foreground: #F4F4F5

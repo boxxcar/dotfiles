@@ -29,10 +29,10 @@ assign [class="Gedit"] $ws5
 assign [class="Steam"] $ws6
 
 # Set Colors:
-set $darkblue	#1E242D
-set $darkpurple	#BDBDD2
-set $white	#F5F5F6
-set $purple	#63637E
+set $darkblue	#1D232C
+set $darkpurple	#BCBCD1
+set $white	#F4F4F5
+set $purple	#62627C
 set $red	#F79295
 
 # use Mouse+$mod to drag floating windows to their wanted position
