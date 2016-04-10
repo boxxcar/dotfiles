@@ -241,4 +241,4 @@ exec compton -CGb # Compton with shadows disabled
 exec --no-startup-id caffeine # No screen saver
 exec --no-startup-id nm-applet # Network Manager applet
 exec_always ~/displays.sh # Custom display config script
-exec --no-startupid blueman-manager # Bluetooth manager for speaker
+exec --no-startupid blueman-applet # Bluetooth manager for speaker
