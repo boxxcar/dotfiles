@@ -48,7 +48,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -hide-scrollbar -dmenu -p "run:"'
+bindsym $mod+d exec --no-startup-id j4-dmenu-desktop --dmenu='rofi -i -hide-scrollbar -separator-style solid -dmenu -p "run:"'
 
 # start rofi window switcher
 bindsym $mod+w exec rofi -show window
@@ -145,7 +145,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+x exec --no-startup-id xrdb ~/.Xresources
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e mode "$exit"
+bindsym $mod+Shift+e exec /home/david/exit_menu.sh
 set $exit (l)ock, (e)xit, (s)hutdown, (r)eboot
 mode "$exit" {
 	bindsym l exec ~/lock.sh ~/Pictures/Icons/Lock3.png, mode "default"
@@ -160,7 +160,7 @@ new_window pixel 1
 #for_window [class="^.*"] border pixel 0
 
 # Gaps:
-smart_gaps on
+#smart_gaps on
 smart_borders no_gaps
 bindsym $mod+Shift+Home gaps inner all set 10
 bindsym $mod+Shift+End gaps inner all set 0

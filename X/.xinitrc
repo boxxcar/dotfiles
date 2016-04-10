@@ -54,7 +54,7 @@ export SSH_AUTH_SOCK
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 
 # Program Autostarts
-exec blueman-applet # Bluetooth
+#exec blueman-applet # Bluetooth
 
 #twm &
 #xclock -geometry 50x50-1+1 &
