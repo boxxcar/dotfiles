@@ -1,10 +1,13 @@
-if (acpi -bi | grep -q "Charging") 
+#!/bin/bash
+
+if (acpi -a | grep "on-line") 
 then
    exec xbacklight -set 100
 
-fi (acpi -bi | grep -q " Discharging")
+elif (acpi -a | grep "off-line")
 then
    exec xbacklight -set 20
 
 else
    exit
+fi

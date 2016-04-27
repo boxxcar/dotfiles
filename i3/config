@@ -186,7 +186,7 @@ bar {
 	height 25
 	tray_padding 5
 	workspace_buttons yes
-	strip_workspace_numbers yes
+	strip_workspace_numbers no
 	separator_symbol ""
 	colors {
 		# Class			Border		Background	Text
@@ -236,3 +236,4 @@ exec compton -CGb
 exec --no-startup-id caffeine
 exec --no-startup-id nm-applet
 exec_always ~/displays.sh
+exec_always ~/autoname-workspaces.py
