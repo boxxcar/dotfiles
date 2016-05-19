@@ -9,13 +9,13 @@ font pango:DejaVu Sans 12
 set $mod Mod4
 
 # WS Set:
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
+set $ws1 "1: "
+set $ws2 "2: "
+set $ws3 "3: "
+set $ws4 "4: "
+set $ws5 "5: "
+set $ws6 "6: "
+set $ws7 "7: "
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
@@ -162,6 +162,7 @@ new_window pixel 1
 # Gaps:
 #smart_gaps on
 smart_borders no_gaps
+gaps inner 10
 bindsym $mod+Shift+Home gaps inner all set 10
 bindsym $mod+Shift+End gaps inner all set 0
 
@@ -189,7 +190,7 @@ bar {
 	height 25
 	tray_padding 5
 	workspace_buttons yes
-	strip_workspace_numbers yes
+	strip_workspace_numbers no
 	separator_symbol ""
 	colors {
 		# Class			Border		Background	Text
@@ -237,7 +238,7 @@ exec --no-startup-id ~/.fehbg
 # Startups:
 exec thunar --daemon # Thunar for disk mounting
 exec --no-startup-id pulseaudio -D # Pulseaudio daemon
-exec compton -CGb # Compton with shadows disabled
+exec compton -CGb --vsync none --paint-on-overlay # Compton with shadows disabled
 exec --no-startup-id caffeine # No screen saver
 exec --no-startup-id nm-applet # Network Manager applet
 exec --no-startup-id blueman-applet # Bluetooth manager for speaker
@@ -247,3 +248,4 @@ exec --no-startup-id redshift-gtk # Redshift for helping eye-strain
 exec_always ~/displays.sh # Custom display config script
 exec_always ~/brightness-set.sh # Set laptop screen brightness
 exec_always ~/autoname-workspaces.py # Display icons in workspaces
+

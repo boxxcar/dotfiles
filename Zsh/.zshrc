@@ -92,3 +92,5 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
+# Aliases
+alias steam-wine='WINEDEBUG=-all wine ~/.wine/drive_c/Program\ Files/Steam/Steam.exe >/dev/null 2>&1 &'
