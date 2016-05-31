@@ -51,6 +51,7 @@ session=${1:-i3}
 
 case $session in
     awesome           ) exec awesome;;
+    budgie	      ) exec budgie-desktop;;
     bspwm             ) exec bspwm;;
     catwm             ) exec catwm;;
     cinnamon          ) exec cinnamon-session;;
