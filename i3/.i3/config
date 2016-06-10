@@ -245,6 +245,5 @@ exec --no-startup-id blueman-applet # Bluetooth manager for speaker
 exec --no-startup-id redshift-gtk # Redshift for helping eye-strain
 
 # Scripts: 
-exec_always ~/displays.sh # Custom display config script
 exec_always ~/brightness-set.sh # Set laptop screen brightness
 
