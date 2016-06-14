@@ -1,0 +1,103 @@
+# ~/.cwmrc
+
+# Ignore
+ignore systemtray
+
+# Set Fonts
+fontname "DejaVu Sans 12"
+
+# Colors
+borderwidth 1
+
+color activeborder	#01FEFE
+color font		#01FEFE
+color selfont		#3751DA
+color groupborder 	#0C5D8A
+color inactiveborder	#D41150
+color menubg		#05104D
+color menufg		#3751DA
+color urgencyborder	#E89D99
+color ungroupborder	#0C5D8A
+
+# Menu
+command exit /home/david/exit_menu.sh
+command lock /home/david/lock.sh
+command term urxvt
+command thunar thunar
+command chrome google-chrome-stable
+
+# Autogroups
+autogroup 1	"URxvt"
+autogroup 2	"Thunar,Gedit"
+autogroup 3	"google-chrome"
+autogroup 4	"Steam,PlayOnLinux"
+
+# Key Binds
+# Reload and Quit
+bind 4S-r restart
+bind 4S-e /home/david/exit_menu.sh
+bind 4S-Escape quit
+
+# Kill Windows
+bind 4-q delete
+
+# Raise and Lower Windows
+bind 4S-z lower
+bind 4S-x raise
+
+# Search Windows
+bind 4-Tab cycle
+bind 4-s search
+bind 4-w "rofi -show window -hide-scrollbar -i"
+
+# Launch
+bind 4-Return urxvt
+bind 4-d j4-dmenu-desktop 
+bind 4S-g google-chrome-stable
+bind 4S-t thunar
+bind 4S-n "urxvt -e ncmpcpp"
+bind 4S-m "urxvt -e mopidy"
+bind 4S-s steam
+
+# Resize
+bind 4-v vmaximize
+bind 4-b hmaximize
+bind 4-f maximize
+bind 4M-Left bigresizeleft
+bind 4M-Down bigresizedown
+bind 4M-Up bigresizeup
+bind 4M-Right bigresizeright
+mousebind 4-3 window_resize
+
+# Move
+mousebind 4-1 window_move
+mousebind 4-2 window_grouptoggle
+bind 4-Left moveleft
+bind 4-Down movedown
+bind 4-Up moveup
+bind 4-Right moveright
+gap 10 20 10 10
+
+# Groups
+stick yes
+
+bind 4S-1 movetogroup1
+bind 4S-2 movetogroup2
+bind 4S-3 movetogroup3
+bind 4S-4 movetogroup4
+bind 4S-5 movetogroup5
+bind 4S-6 movetogroup6
+bind 4S-7 movetogroup7
+bind 4S-8 movetogroup8
+bind 4S-9 movetogroup9
+
+bind 4-1 grouponly1
+bind 4-2 grouponly2
+bind 4-3 grouponly3
+bind 4-4 grouponly4
+bind 4-5 grouponly5
+bind 4-6 grouponly6
+bind 4-7 grouponly7
+bind 4-8 grouponly8
+bind 4-9 grouponly9
+
