@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/home/david/.lemonbar/bar-data | lemonbar -d -p -g 120x20+840+10 -f Serif-10 -f FontAwesome-10 &
+sleep 1
+stalonetray &

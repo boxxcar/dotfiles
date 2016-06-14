@@ -46,8 +46,7 @@ compton -CGb --vsync opengl-swc --backend glx &
 feh --bg-scale /home/david/Pictures/Wallpapers/Millennium\ Falcon.png &
 
 # Start Programs
-sxhkd -c ~/.sxhkdrc &
-stalonetray &
+sxhkd -c ~/.cwm/sxhkdrc &
 caffeine &
 nm-applet &
 blueman-applet &
@@ -56,6 +55,6 @@ numlockx &
 volumeicon &
 
 # Start WM
-exec cwm
+exec cwm -c ~/.cwm/cwmrc
 #exec i3
 
