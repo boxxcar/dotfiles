@@ -11,21 +11,7 @@ topbar: {
 	border-color-rgb: 0xf4f4f5
 	background-color-rgb: 0x1d232c
 	background-color-nowindow-argb: 0xfff79295
-	block-list: ["workspace", "title", "time", "date"]
-	
-	workspace: {
-		exec: "YABAR_WORKSPACE";
-		align: "left";
-		fixed-size: 40;
-		internal-option1: "      ";
-	}
-
-	title: {
-		exec: "YABAR_TITLE";
-		align: "center";
-		justify: "left";
-		fixed-size: 200;
-	}
+	block-list: ["time", "date"]
 
 	time: { 
 		exec: "YABAR_DATE";
