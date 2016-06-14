@@ -35,7 +35,7 @@ autogroup 4	"Steam,PlayOnLinux"
 # Key Binds
 # Reload and Quit
 bind 4S-r restart
-bind 4S-e /home/david/exit_menu.sh
+bind 4S-e /home/david/.exit-menu
 bind 4S-Escape quit
 
 # Kill Windows

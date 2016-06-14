@@ -8,7 +8,7 @@ read -rnsl key
 res=$(echo "Lock|Exit|Restart|Shutdown" | rofi -sep "|" -dmenu -i -p "Good Bye!" -separator-style solid -width 200 -hide-scrollbar -location 7 -padding 15 -line-margin 5 -eh 1)
  
 if [ $res = "Lock" ] || [ $key = "l" ]; then
-    /home/david/lock.sh
+    /home/david/.lock
 fi
 if [ $res = "Exit" ] || [ $key = "e" ]; then
     i3-msg exit

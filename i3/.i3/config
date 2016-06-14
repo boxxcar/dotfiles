@@ -145,10 +145,10 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+x exec --no-startup-id xrdb ~/.Xresources
 
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec /home/david/exit_menu.sh
+bindsym $mod+Shift+e exec /home/david/.exit-menu
 set $exit (l)ock, (e)xit, (s)hutdown, (r)eboot
 mode "$exit" {
-	bindsym l exec ~/lock.sh ~/Pictures/Icons/Lock3.png, mode "default"
+	bindsym l exec ~/.lock ~/Pictures/Icons/Lock3.png, mode "default"
 	bindsym e exec --no-startup-id i3-msg exit, mode "default"
 	bindsym s exec systemctl poweroff
 	bindsym r exec systemctl reboot
@@ -245,5 +245,5 @@ exec --no-startup-id blueman-applet # Bluetooth manager for speaker
 exec --no-startup-id redshift-gtk # Redshift for helping eye-strain
 
 # Scripts: 
-exec_always ~/brightness-set.sh # Set laptop screen brightness
+exec_always ~/.brightness-set # Set laptop screen brightness
 
