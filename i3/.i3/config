@@ -43,7 +43,7 @@ set $update && pkill -RTMIN+1 i3blocks
 
 # start a terminal
 bindsym $mod+Return exec urxvt
-
+ 
 # kill focused window
 bindsym $mod+q kill
 
