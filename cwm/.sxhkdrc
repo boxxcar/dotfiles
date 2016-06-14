@@ -1,14 +1,38 @@
+# Keybinding
+
+# Programs
+super + shift + {g,t,s,p,m,n}
+	{google-chrome-stable,thunar,steam,spotify,urxvt -e mopidy,urxvt -e ncmpcpp}
+
+super + Return
+	urxvt
+
+super + Print
+	scrot
+
+super + d
+	j4-dmenu-desktop --dmenu='rofi -i -hide-scrollbar -separator-style solid -dmenu -p "run:"'
+
+super + w
+	rofi -show window
+
+super + shift + e
+	/home/david/.exit-menu
+
+# Backlight
+super + End
+	xbacklight -inc 5
+
+super + Home
+	xbacklight -dec 5
+
+# Volume
 XF86AudioRaiseVolume
-  volume + && popup volume: $(volume level)
+	pactl set-sink-volume 0 +5%
 
 XF86AudioLowerVolume
-  volume - && popup volume: $(volume level)
+	pactl set-sink-volume 0 -5%
 
 XF86AudioMute
-  volume ! && popup volume: $(volume state)
+	pactl set-sink-volume 0 toggle
 
-XF86Audio{Prev,Next}
-  ncmpcpp {prev, next}
-
-XF86AudioPlay
-  ncmpcpp toggle

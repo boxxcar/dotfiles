@@ -7,21 +7,21 @@ ignore systemtray
 fontname "DejaVu Sans 12"
 
 # Colors
-borderwidth 1
+borderwidth 3
 
-color activeborder #01FEFE
-color font #01FEFE
-color selfont #3751DA
-color groupborder #0C5D8A
-color inactiveborder #D41150
-color menubg #05104D
-color menufg #3751DA
-color urgencyborder #E89D99
-color ungroupborder #0C5D8A
+color activeborder 	"#01FEFE"
+color inactiveborder 	"#05104D"
+color groupborder 	"#3751DA"
+color font 		"#01FEFE"
+color selfont 		"#01FEFE"
+color menubg 		"#05104D"
+color menufg 		"#D41150"
+color urgencyborder 	"#E89D99"
+color ungroupborder 	"#D41150"
 
 # Menu
-command exit /home/david/exit_menu.sh
-command lock /home/david/lock.sh
+command exit /home/david/.exit-menu
+command lock /home/david/.lock
 command term urxvt
 command thunar thunar
 command chrome google-chrome-stable
@@ -35,10 +35,7 @@ autogroup 4	"Steam,PlayOnLinux"
 # Key Binds
 # Reload and Quit
 bind 4S-r restart
-bind 4S-e /home/david/.exit-menu
 bind 4S-Escape quit
-
-# Kill Windows
 bind 4-q delete
 
 # Raise and Lower Windows
@@ -48,16 +45,6 @@ bind 4S-x raise
 # Search Windows
 bind 4-Tab cycle
 bind 4-s search
-bind 4-w "rofi -show window -hide-scrollbar -i"
-
-# Launch
-bind 4-Return urxvt
-bind 4-d j4-dmenu-desktop 
-bind 4S-g google-chrome-stable
-bind 4S-t thunar
-bind 4S-n "urxvt -e ncmpcpp"
-bind 4S-m "urxvt -e mopidy"
-bind 4S-s steam
 
 # Resize
 bind 4-v vmaximize
