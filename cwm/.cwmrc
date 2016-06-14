@@ -9,15 +9,15 @@ fontname "DejaVu Sans 12"
 # Colors
 borderwidth 1
 
-color activeborder	#01FEFE
-color font		#01FEFE
-color selfont		#3751DA
-color groupborder 	#0C5D8A
-color inactiveborder	#D41150
-color menubg		#05104D
-color menufg		#3751DA
-color urgencyborder	#E89D99
-color ungroupborder	#0C5D8A
+color activeborder #01FEFE
+color font #01FEFE
+color selfont #3751DA
+color groupborder #0C5D8A
+color inactiveborder #D41150
+color menubg #05104D
+color menufg #3751DA
+color urgencyborder #E89D99
+color ungroupborder #0C5D8A
 
 # Menu
 command exit /home/david/exit_menu.sh
