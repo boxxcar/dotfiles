@@ -46,6 +46,7 @@ compton -CGb --vsync opengl-swc --backend glx &
 feh --bg-scale /home/david/Pictures/Wallpapers/Millennium\ Falcon.png &
 
 # Start Programs
+sxhkd -c ~/.sxhkdrc &
 stalonetray &
 caffeine &
 nm-applet &
