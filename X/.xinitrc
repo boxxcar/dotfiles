@@ -40,7 +40,7 @@ export SSH_AUTH_SOCK
 QT_STYLE_OVERRIDE=GTK+
 
 # Start Compositor
-compton -CGb &
+compton -CGb --vsync opengl-swc --backend glx &
 
 # Wallpaper
 feh --bg-scale /home/david/Pictures/Wallpapers/Millennium\ Falcon.png &
@@ -57,3 +57,4 @@ volumeicon &
 # Start WM
 exec cwm
 #exec i3
+
