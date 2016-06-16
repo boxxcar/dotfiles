@@ -1,5 +1,29 @@
 #!/bin/bash
 
-/home/david/.lemonbar/bar-data | lemonbar -d -p -g 120x20+840+10 -f Serif-10 -f FontAwesome-10 &
-sleep 1
-stalonetray &
+# Lemonbar Start
+
+# Duration
+duration=5
+
+# Geometry
+barx() {
+	x=`xrandr | grep '*' | cut -c 4-7`
+	y=2
+	z=$(( ($x / $y) - (${barw} / 2) ))
+#	w=$(( $z - ${barw} ))
+	echo $z
+}
+
+bary=10
+barw=200
+barh=40
+
+# Colors
+barbg=#05104D
+barfg=#D41150
+
+# Font
+barfont="xft:Droid Sans:size=12"
+icons="FontAwesome:size=12"
+
+(echo "%{c}$@"; sleep ${duration}) | lemonbar -g ${barw}x${barh}+$(barx)+${bary} -B ${barbg} -f ${barfont} -f ${icons} -d

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Battery Check For Popup
+
+norm=75
+half=50
+crit=10
+bat=$(sed 's/%//' /sys/class/power_supply/BAT0/capacity)
+txt= ~/.lemonbar/bar "Battery Level: ${bat}"
+
+if [[ "${bat}" = *${norm}* ]]
+then
+	echo "${txt}"
+
+elif [[ "${bat}" = *${half}* ]]
+then
+	echo "${txt}"
+
+elif [[ "${bat}" = *${crit}* ]]
+then
+	echo "${txt}"
+
+else
+	echo "No Battery?"
+fi

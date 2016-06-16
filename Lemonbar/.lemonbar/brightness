@@ -3,20 +3,6 @@
 # One of the following: xrandr, xbacklight, kernel
 METHOD="xbacklight"
 
-# Left click
-if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
-  xbacklight -inc 5
-# Mouse Wheel Up
-elif [[ "${BLOCK_BUTTON}" -eq 4 ]]; then
-  xbacklight -inc 5
-# Mouse Wheel Down
-elif [[ "${BLOCK_BUTTON}" -eq 5 ]]; then
-  xbacklight -dec 5
-# Right click
-elif [[ "${BLOCK_BUTTON}" -eq 3 ]]; then
-  xbacklight -dec 5
-fi
-
 URGENT_VALUE=10
 
 if [[ "${METHOD}" = "xrandr" ]]; then
