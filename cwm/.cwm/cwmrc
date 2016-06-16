@@ -24,8 +24,8 @@ color ungroupborder 	"#D41150"
 command exit /home/david/.scripts/exit-menu
 command lock /home/david/.scripts/lock
 command term urxvt
-command thunar thunar
-command chrome google-chrome-stable
+command weather /home/david/.lemonbar/weather-check
+command battery /home/david/.lemonbar/battery-check
 
 # Autogroups
 autogroup 1	"URxvt"
