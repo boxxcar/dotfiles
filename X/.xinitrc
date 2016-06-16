@@ -39,6 +39,11 @@ export SSH_AUTH_SOCK
 
 QT_STYLE_OVERRIDE=GTK+
 
+# Script Start
+~/.scripts/display &
+while :; do ~/.lemonbar/battery_check; sleep 120; done &
+while :; do ~/.lemonbar/weather_check; sleep 1830; done &
+
 # Start Compositor
 compton -CGb --vsync opengl-swc --backend glx &
 
@@ -53,8 +58,9 @@ blueman-applet &
 redshift-gtk &
 numlockx &
 volumeicon &
+xclock &
+stalonetray -c ~/.cwm/stalonetrayrc &
 
 # Start WM
 exec cwm -c ~/.cwm/cwmrc
 #exec i3
-

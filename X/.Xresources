@@ -18,7 +18,15 @@ rofi.location: 0
 URxvt*.depth: 32
 URxvt*.scrollBar: false
 URxvt*.font: xft:Hack:size=12
-
-! Colors
 URxvt*background: #05104D
 URxvt*foreground: #01FEFE
+
+! XClock Config
+XClock*foreground: #D41150
+XClock*background: #05104D
+XClock*update: 1
+XClock*geometry: -10+10
+XClock*strftime: %I:%M:%S  %D
+XClock*analog: false
+XClock*twentyfour: false
+XClock*padding: 10
