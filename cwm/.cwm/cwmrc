@@ -2,6 +2,7 @@
 
 # Ignore
 ignore systemtray
+ignore xclock
 
 # Set Fonts
 fontname "DejaVu Sans 12"
@@ -20,15 +21,15 @@ color urgencyborder 	"#E89D99"
 color ungroupborder 	"#D41150"
 
 # Menu
-command exit /home/david/.exit-menu
-command lock /home/david/.lock
+command exit /home/david/.scripts/exit-menu
+command lock /home/david/.scripts/lock
 command term urxvt
 command thunar thunar
 command chrome google-chrome-stable
 
 # Autogroups
 autogroup 1	"URxvt"
-autogroup 2	"Thunar,Gedit"
+autogroup 2	"Thunar"
 autogroup 3	"google-chrome"
 autogroup 4	"Steam,PlayOnLinux"
 
@@ -63,7 +64,7 @@ bind 4-Left moveleft
 bind 4-Down movedown
 bind 4-Up moveup
 bind 4-Right moveright
-gap 10 20 10 10
+gap 10 10 10 10
 
 # Groups
 stick yes
