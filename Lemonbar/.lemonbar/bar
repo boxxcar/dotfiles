@@ -3,14 +3,13 @@
 # Lemonbar Start
 
 # Duration
-duration=5
+duration=10
 
 # Geometry
 barx() {
 	x=`xrandr | grep '*' | cut -c 4-7`
 	y=2
 	z=$(( ($x / $y) - (${barw} / 2) ))
-#	w=$(( $z - ${barw} ))
 	echo $z
 }
 
@@ -26,4 +25,4 @@ barfg=#D41150
 barfont="xft:Droid Sans:size=12"
 icons="FontAwesome:size=12"
 
-(echo "%{c}$@"; sleep ${duration}) | lemonbar -g ${barw}x${barh}+$(barx)+${bary} -B ${barbg} -f ${barfont} -f ${icons} -d
+(echo "%{c}$@"; sleep ${duration}) | lemonbar -g ${barw}x${barh}+$(barx)+${bary} -B ${barbg} -f ${barfont} -f ${icons} -F ${barfg} -U ${barfg} -d
