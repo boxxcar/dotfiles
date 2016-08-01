@@ -3,6 +3,7 @@
 # Ignore
 ignore systemtray
 ignore xclock
+ignore avant-window-navigator
 
 # Set Fonts
 fontname "DejaVu Sans 12"
@@ -10,15 +11,15 @@ fontname "DejaVu Sans 12"
 # Colors
 borderwidth 3
 
-color activeborder 	"#01FEFE"
-color inactiveborder 	"#05104D"
-color groupborder 	"#3751DA"
-color font 		"#01FEFE"
-color selfont 		"#01FEFE"
-color menubg 		"#05104D"
-color menufg 		"#D41150"
-color urgencyborder 	"#E89D99"
-color ungroupborder 	"#D41150"
+color activeborder 	"#FAE891"
+color inactiveborder 	"#222939"
+color groupborder 	"#3F5E59"
+color font 		"#707C6A"
+color selfont 		"#FAE891"
+color menubg 		"#222939"
+color menufg 		"#070707"
+color urgencyborder 	"#F2CA8F"
+color ungroupborder 	"#7E595B"
 
 # Menu
 command exit /home/david/.scripts/exit-menu

@@ -41,25 +41,22 @@ QT_STYLE_OVERRIDE=GTK+
 
 # Script Start
 ~/.scripts/display &
-while :; do ~/.lemonbar/battery-check; sleep 120; done &
-while :; do ~/.lemonbar/weather-check; sleep 1830; done &
 
 # Start Compositor
 compton -CGb --vsync opengl-swc --backend glx &
 
 # Wallpaper
-feh --bg-scale /home/david/Pictures/Wallpapers/Millennium\ Falcon.png &
+nitrogen --restore &
 
 # Start Programs
-sxhkd -c ~/.cwm/sxhkdrc &
+sxhkd -c ~/sxhkdrc &
 caffeine &
 nm-applet &
 blueman-applet &
 redshift-gtk &
 numlockx &
+avant-window-navigator &
 volumeicon &
-xclock &
-stalonetray -c ~/.cwm/stalonetrayrc &
 
 # Start WM
 exec cwm -c ~/.cwm/cwmrc

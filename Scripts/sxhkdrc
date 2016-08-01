@@ -13,6 +13,9 @@ super + Print
 super + d
 	j4-dmenu-desktop --dmenu='rofi -i -hide-scrollbar -separator-style solid -dmenu -p "run:"'
 
+#super + w
+#	rofi -show window
+
 super + shift + e
 	/home/david/.scripts/exit-menu
 

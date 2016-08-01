@@ -1,11 +1,10 @@
-
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 rofi.color-enabled: true
-rofi.color-window: #05104d, #01fefe, #3751da
-rofi.color-normal: #05104d, #01fefe, #05104d, #3751da, #01fefe
-rofi.color-active: #05104d, #01fefe, #05104d, #3751da, #01fefe
+rofi.color-window: #222939, #fae891, #070707
+rofi.color-normal: #222939, #707c6a, #222939, #070707, #fae891
+rofi.color-active: #222939, #707c6a, #222939, #070707, #fae891
 rofi.color-urgent: #0c5d8a, #e89d99, #0c5d8a, #d41150, #e89d99
 ! Launcher
 rofi.width: 500
@@ -15,18 +14,9 @@ rofi.lines: 5
 rofi.location: 0
 
 ! URxvt Config
-URxvt*.depth: 32
+!URxvt*.depth: 32
 URxvt*.scrollBar: false
 URxvt*.font: xft:Hack:size=12
-URxvt*background: #05104D
-URxvt*foreground: #01FEFE
+URxvt*background: #222939
+URxvt*foreground: #FAE891
 
-! XClock Config
-XClock*foreground: #D41150
-XClock*background: #05104D
-XClock*update: 1
-XClock*geometry: -10+10
-XClock*strftime: %I:%M:%S  %D
-XClock*analog: false
-XClock*twentyfour: false
-XClock*padding: 10

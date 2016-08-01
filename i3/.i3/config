@@ -238,12 +238,13 @@ exec --no-startup-id ~/.fehbg
 # Startups:
 exec thunar --daemon # Thunar for disk mounting
 exec --no-startup-id pulseaudio -D # Pulseaudio daemon
-exec compton -CGb --vsync none --paint-on-overlay # Compton with shadows disabled
-exec --no-startup-id caffeine # No screen saver
-exec --no-startup-id nm-applet # Network Manager applet
-exec --no-startup-id blueman-applet # Bluetooth manager for speaker
-exec --no-startup-id redshift-gtk # Redshift for helping eye-strain
+#exec compton -CGb --vsync none --paint-on-overlay # Compton with shadows disabled
+#exec --no-startup-id caffeine # No screen saver
+#exec --no-startup-id nm-applet # Network Manager applet
+#exec --no-startup-id blueman-applet # Bluetooth manager for speaker
+#exec --no-startup-id redshift-gtk # Redshift for helping eye-strain
 
 # Scripts: 
+
 exec_always ~/.brightness-set # Set laptop screen brightness
 

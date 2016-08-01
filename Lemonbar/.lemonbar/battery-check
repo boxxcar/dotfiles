@@ -6,7 +6,7 @@ norm=75
 half=50
 crit=10
 bat=$(sed 's/%//' /sys/class/power_supply/BAT0/capacity)
-txt= ~/.lemonbar/bar "Battery Level: ${bat}"
+txt=$(~/.lemonbar/bar "Battery Level: ${bat}")
 
 if [[ "${bat}" = *${norm}* ]]
 then

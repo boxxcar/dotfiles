@@ -1,7 +1,7 @@
 #!/bin/bash
 
-image="$HOME/Pictures/Wallpapers/X Wing.png"
+image="$HOME/Pictures/Wallpapers/Lock.png"
 
 (( $# )) && { icon=$1; }
 
-i3lock -u -i "$image"
+i3lock -i "$image" -l '#01101C' -w '#FF5262' -o '#01FEFE'

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Battery Check For Popup
+
+bat=$(cat /sys/class/power_supply/BAT0/capacity)
+txt=$(~/.lemonbar/bar "Battery Level: ${bat}")
+
+echo "${txt}"
